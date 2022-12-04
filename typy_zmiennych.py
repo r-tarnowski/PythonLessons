@@ -1,0 +1,6 @@
+number = input("Podaj jakaś liczbę: ")
+print(type(number))
+number = float(number)
+print(type(number))
+print("Dwukrotoność tej liczby wynosi:", number*2)
+print(f"Dwukrotoność tej liczby wynosi: {number*2}")
