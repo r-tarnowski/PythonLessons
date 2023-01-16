@@ -115,7 +115,6 @@ while True:
     if step_number >= num_of_steps:
         break
 
-
     for i in range(len(reverse_reverse_segments[step_number])):
         a_matrix[n - 1 - steps_left - i][steps_up] = reverse_reverse_segments[step_number][i]
     steps_up += 1
@@ -125,4 +124,11 @@ while True:
 
 
 print(f"Macierz: {a_matrix}")
+
+for i in range(n):
+    for j in range(n):
+        if i == (n-1) and j == (n-1):
+            print(a_matrix[i][j])
+        else:
+            print(a_matrix[i][j], end=", ")
 
